@@ -1,5 +1,12 @@
 # AI-Powered Quantitative Trading System
 
+[![Python Version](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Version](https://img.shields.io/badge/version-1.0.0-orange)](CHANGELOG.md)
+[![Status](https://img.shields.io/badge/status-active-success)]()
+[![LangChain](https://img.shields.io/badge/LangChain-0.3.7-blue)](https://langchain.com/)
+[![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 An advanced AI-driven quantitative trading system that leverages multiple expert agents to analyze markets and make informed trading decisions. This project combines modern AI techniques with traditional investment philosophies to create a comprehensive market analysis framework.
 
 **Note:** This is a research and educational project designed to explore the intersection of artificial intelligence and quantitative finance. Not intended for actual trading or investment purposes.
@@ -39,6 +46,51 @@ This implementation includes several enhancements and customizations:
 - **Real-time Analysis**: Live market data integration and sentiment analysis
 - **Modular Design**: Easily extensible architecture for adding new agents and strategies
 - **CLI & Web Interface**: Multiple interfaces for different use cases
+- **Risk Management**: Built-in position sizing, stop-loss, and portfolio risk controls
+- **Configuration System**: YAML-based configuration for easy customization
+
+## System Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                         User Interface                           │
+│                   (CLI / Web Application)                        │
+└────────────────────────────┬────────────────────────────────────┘
+                             │
+                             ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                    Portfolio Manager                             │
+│              (Aggregates signals & makes decisions)              │
+└────────────────────────────┬────────────────────────────────────┘
+                             │
+        ┌────────────────────┼────────────────────┐
+        │                    │                    │
+        ▼                    ▼                    ▼
+┌──────────────┐    ┌──────────────┐    ┌──────────────┐
+│   Analyst    │    │   Signal     │    │     Risk     │
+│   Agents     │    │  Generators  │    │   Manager    │
+│              │    │              │    │              │
+│ • Buffett    │    │ • Valuation  │    │ • Position   │
+│ • Graham     │    │ • Sentiment  │    │   Limits     │
+│ • Munger     │    │ • Technical  │    │ • Stop Loss  │
+│ • Lynch      │    │ • Fundamental│    │ • Portfolio  │
+│ • Fisher     │    │              │    │   Risk       │
+│ • Burry      │    │              │    │              │
+│ • Damodaran  │    │              │    │              │
+│ • And more...│    │              │    │              │
+└──────┬───────┘    └──────┬───────┘    └──────┬───────┘
+       │                   │                   │
+       └───────────────────┼───────────────────┘
+                           │
+                           ▼
+                ┌──────────────────────┐
+                │   Data Layer         │
+                │ • Market Data API    │
+                │ • Financial Metrics  │
+                │ • News & Sentiment   │
+                │ • Cache System       │
+                └──────────────────────┘
+```
 
 ## Disclaimer
 
@@ -163,7 +215,7 @@ Note: The `--ollama`, `--start-date`, and `--end-date` flags work for the backte
 
 The new way to run the AI Hedge Fund is through our web application that provides a user-friendly interface. This is recommended for users who prefer visual interfaces over command line tools.
 
-Please see detailed instructions on how to install and run the web application [here](https://github.com/virattt/ai-hedge-fund/tree/main/app).
+Please see detailed instructions on how to install and run the web application [here](https://github.com/Rahulyatagiri/AI-Hedge-Fund/tree/main/app).
 
 <img width="1721" alt="Screenshot 2025-06-28 at 6 41 03 PM" src="https://github.com/user-attachments/assets/b95ab696-c9f4-416c-9ad1-51feb1f5374b" />
 
