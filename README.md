@@ -1,6 +1,8 @@
-# AI Hedge Fund
+# AI-Powered Quantitative Trading System
 
-This is a proof of concept for an AI-powered hedge fund.  The goal of this project is to explore the use of AI to make trading decisions.  This project is for **educational** purposes only and is not intended for real trading or investment.
+An advanced AI-driven quantitative trading system that leverages multiple expert agents to analyze markets and make informed trading decisions. This project combines modern AI techniques with traditional investment philosophies to create a comprehensive market analysis framework.
+
+**Note:** This is a research and educational project designed to explore the intersection of artificial intelligence and quantitative finance. Not intended for actual trading or investment purposes.
 
 This system employs several agents working together:
 
@@ -25,9 +27,18 @@ This system employs several agents working together:
 
 <img width="1042" alt="Screenshot 2025-03-22 at 6 19 07 PM" src="https://github.com/user-attachments/assets/cbae3dcf-b571-490d-b0ad-3f0f035ac0d4" />
 
-Note: the system does not actually make any trades.
+**Important:** The system performs analysis and generates recommendations but does not execute actual trades.
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/virattt?style=social)](https://twitter.com/virattt)
+## Key Features & Enhancements
+
+This implementation includes several enhancements and customizations:
+
+- **Multi-Agent Architecture**: Coordinated system of specialized investment agents
+- **Flexible LLM Support**: Compatible with multiple AI providers (OpenAI, Anthropic, Groq, DeepSeek, and more)
+- **Advanced Backtesting**: Comprehensive performance analysis with custom metrics
+- **Real-time Analysis**: Live market data integration and sentiment analysis
+- **Modular Design**: Easily extensible architecture for adding new agents and strategies
+- **CLI & Web Interface**: Multiple interfaces for different use cases
 
 ## Disclaimer
 
@@ -52,16 +63,34 @@ By using this software, you agree to use it solely for learning purposes.
 
 ## How to Install
 
-Before you can run the AI Hedge Fund, you'll need to install it and set up your API keys. These steps are common to both the full-stack web application and command line interface.
+Before you can run the system, you'll need to install it and set up your API keys. These steps are common to both the full-stack web application and command line interface.
 
-### 1. Clone the Repository
+### Quick Setup (Recommended)
 
 ```bash
-git clone https://github.com/virattt/ai-hedge-fund.git
-cd ai-hedge-fund
+git clone https://github.com/Rahulyatagiri/AI-Hedge-Fund.git
+cd AI-Hedge-Fund
+./setup.sh
 ```
 
-### 2. Set up API keys
+The setup script will:
+- Install Poetry (if not already installed)
+- Install all project dependencies
+- Create a `.env` file from the template
+- Provide next steps for configuration
+
+### Manual Installation
+
+If you prefer to set up manually:
+
+#### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Rahulyatagiri/AI-Hedge-Fund.git
+cd AI-Hedge-Fund
+```
+
+#### 2. Set up API keys
 
 Create a `.env` file for your API keys:
 ```bash
@@ -141,17 +170,22 @@ Please see detailed instructions on how to install and run the web application [
 
 ## How to Contribute
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for detailed information on how to contribute to this project.
 
-**Important**: Please keep your pull requests small and focused.  This will make it easier to review and merge.
+**Quick Start for Contributors:**
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Make your changes and test thoroughly
+4. Commit your changes (`git commit -m 'Add: AmazingFeature'`)
+5. Push to the branch (`git push origin feature/AmazingFeature`)
+6. Open a Pull Request
+
+**Important**: Please keep your pull requests small and focused. Make sure all tests pass before submitting.
 
 ## Feature Requests
 
-If you have a feature request, please open an [issue](https://github.com/virattt/ai-hedge-fund/issues) and make sure it is tagged with `enhancement`.
+If you have a feature request, please open an [issue](https://github.com/Rahulyatagiri/AI-Hedge-Fund/issues) and make sure it is tagged with `enhancement`.
 
 ## License
 

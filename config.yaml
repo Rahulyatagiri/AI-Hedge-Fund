@@ -1,0 +1,67 @@
+# AI Quantitative Trading System Configuration
+# Custom configuration for enhanced trading analysis
+
+# System Settings
+system:
+  name: "AI-Powered Quantitative Trading System"
+  version: "1.0.0"
+  author: "Rahul Yatagiri"
+
+# Default Trading Parameters
+trading:
+  default_tickers:
+    - AAPL
+    - GOOGL
+    - MSFT
+    - NVDA
+    - TSLA
+
+  # Risk Management Settings
+  risk_management:
+    max_position_size: 0.20  # Maximum 20% of portfolio per position
+    stop_loss_percentage: 0.10  # 10% stop loss
+    take_profit_percentage: 0.25  # 25% take profit
+    max_portfolio_risk: 0.02  # Maximum 2% portfolio risk per trade
+
+  # Backtesting Settings
+  backtesting:
+    initial_capital: 100000  # Starting capital for backtests
+    commission_rate: 0.001  # 0.1% commission per trade
+    slippage_rate: 0.0005  # 0.05% slippage
+
+# Agent Configuration
+agents:
+  # Enable/disable specific agents
+  enabled_agents:
+    valuation: true
+    sentiment: true
+    fundamentals: true
+    technicals: true
+    risk_manager: true
+    portfolio_manager: true
+
+  # Agent weights for decision making
+  agent_weights:
+    valuation: 0.25
+    sentiment: 0.20
+    fundamentals: 0.25
+    technicals: 0.20
+    risk_manager: 0.10
+
+# LLM Configuration
+llm:
+  default_provider: "openai"
+  temperature: 0.7
+  max_tokens: 2000
+
+# Data Settings
+data:
+  cache_enabled: true
+  cache_duration_hours: 24
+  historical_data_years: 5
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/trading_system.log"
